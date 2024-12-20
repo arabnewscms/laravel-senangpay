@@ -10,7 +10,9 @@
  *      @author: Idham Hafidz Bin Ismail (Apit John Kedekut Ismail)
  *      @email: idham@jomos.com.my
  *      @website: jomos.com.my
- *
+ *      @author: Mahmoud Ibrahim (php anonymous)
+ *      @email:  php.anonymous1@gmail.com
+ *      @website: phpdash.com
  */
 
 return [
