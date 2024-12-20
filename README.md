@@ -1,18 +1,15 @@
 # Senang Pay
-
-[![Build Status](https://travis-ci.org/jomos/senang-pay.svg?branch=master)](https://travis-ci.org/jomos/senang-pay)
-[![styleci](https://styleci.io/repos/CHANGEME/shield)](https://styleci.io/repos/CHANGEME)
-[![Packagist](https://img.shields.io/packagist/v/jomos/senang-pay.svg)](https://packagist.org/packages/jomos/senang-pay)
-[![Packagist](https://poser.pugx.org/jomos/senang-pay/d/total.svg)](https://packagist.org/packages/jomos/senang-pay)
-[![Packagist](https://img.shields.io/packagist/l/jomos/senang-pay.svg)](https://packagist.org/packages/jomos/senang-pay)
+ 
 
 Package description: This is a simple package to allow using Senangpay Payment Gateway API in Laravel Project
+
+froked package from Jomos and updated to enable in laravel 10 or later by mahmoud Ibrahim (phpanonymous)
 
 ## Installation
 
 Install via composer
 ```
-composer require tajulsharby/senangpay
+composer require phpanonymous/senangpay
 ```
 
 ### Register Service Provider
@@ -22,20 +19,20 @@ auto discovery feature.**
 
 Add service provider to `config/app.php` in `providers` section
 ```php
-Jomos\SenangPay\ServiceProvider::class,
+Phpanonymous\SenangPay\ServiceProvider::class,
 ```
 
 ### Register Facade
 
 Register package facade in `config/app.php` in `aliases` section
 ```php
-Jomos\SenangPay\Facades\SenangPay::class,
+Phpanonymous\SenangPay\Facades\SenangPay::class,
 ```
 
 ### Publish Configuration File
 
 ```
-php artisan vendor:publish --provider="Jomos\SenangPay\ServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Phpanonymous\SenangPay\ServiceProvider" --tag="config"
 ```
 
 ## Usage
@@ -56,7 +53,7 @@ Example: After customer click checkout or pay, the form should submit via post t
 
 ```php
 
-use Jomos/SenangPay/Senangpay;
+use Phpanonymous/SenangPay/Senangpay;
 
 class PaymentController extends Controller {
     
@@ -122,3 +119,9 @@ instead of using the issue tracker.
 
 - [](https://github.com/jomos/senang-pay)
 - [All contributors](https://github.com/jomos/senang-pay/graphs/contributors)
+
+
+- [](https://github.com/arabnewscms/senang-pay)
+- [All contributors](https://github.com/jomos/senang-pay/graphs/contributors)
+
+
