@@ -11,7 +11,15 @@ Install via composer
 ```
 composer require phpanonymous/senangpay
 ```
+```
+config/senang-pay.php
+return [
+    "mode" => "sandbox", // sandbox | live
+    "secret-key" => "",
+    "merchant-id" => ""
+];
 
+```
 ### Register Service Provider
 
 **Note! This and next step are optional if you use laravel>=5.5 with package
@@ -53,7 +61,7 @@ Example: After customer click checkout or pay, the form should submit via post t
 
 ```php
 
-use Phpanonymous/SenangPay/Senangpay;
+use Phpanonymous\SenangPay\Senangpay;
 
 class PaymentController extends Controller {
     
