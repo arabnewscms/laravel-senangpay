@@ -1,6 +1,6 @@
 {
-  "name": "tajulsharby/senangpay",
-  "description": "This package will provide facade and easy integration with SenangPay payment gateway.",
+  "name": "phpanonymous/senangpay",
+  "description": "This package will provide facade and easy integration with SenangPay payment gateway. updated by Mahmoud Ibrahim - phpanonymous",
   "license": "MIT",
   "keywords": [
     "Senangpay",
@@ -10,24 +10,27 @@
     {
       "name": "Apit John Kedekut Ismail",
       "email": "idham@jomos.com.my"
+    },
+    {
+      "name": "Mahmoud Ibrahim",
+      "email": "php.anonymous1@gmail.com"
     }
   ],
   "require": {
-    "php": ">=7.0",
-    "illuminate/support": "~5.5.0"
+    "php": ">=8.0"
+ 
   },
   "require-dev": {
-    "orchestra/testbench": "~3.5.0",
-    "phpunit/phpunit": "^5.7"
+ 
   },
   "autoload": {
     "psr-4": {
-      "Jomos\\SenangPay\\": "src"
+      "Phpanonymous\\SenangPay\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Jomos\\SenangPay\\Tests\\": "tests"
+      "Phpanonymous\\SenangPay\\Tests\\": "tests"
     },
     "files": [
       "vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"
@@ -39,7 +42,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Jomos\\SenangPay\\ServiceProvider"
+        "Phpanonymous\\SenangPay\\ServiceProvider"
       ]
     }
   },
