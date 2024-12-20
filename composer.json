@@ -20,9 +20,7 @@
     "php": ">=8.0"
  
   },
-  "require-dev": {
  
-  },
   "autoload": {
     "psr-4": {
       "Phpanonymous\\SenangPay\\": "src"
