@@ -1,6 +1,6 @@
 <?php
 
-namespace Jomos\SenangPay\Facades;
+namespace Phpanonymous\SenangPay\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
