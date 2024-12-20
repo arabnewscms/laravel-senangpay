@@ -3,7 +3,7 @@
 
 Package description: This is a simple package to allow using Senangpay Payment Gateway API in Laravel Project
 
-froked package from Jomos and updated to enable in laravel 10 or later by mahmoud Ibrahim (phpanonymous)
+forked package from Jomos and updated to enable in laravel 10 or later by mahmoud Ibrahim (phpanonymous)
 
 ## Installation
 
