@@ -81,8 +81,8 @@ class PaymentController extends Controller {
             'email'=>$payerEmail,
             'mobile'=>$payerPhone,
         ];
-         $url = Senangpay::pay($user_info, $detail, $order_id, $amount);
-       return redirect($url); 
+      $payment = Senangpay::pay($user_info, $detail, $order_id, $amount);
+      return redirect()->away($payment['url']); 
     }
 
     public function processReturnUrl(Request $request){
