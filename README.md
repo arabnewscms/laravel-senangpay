@@ -76,14 +76,18 @@ class PaymentController extends Controller {
         $orderId = '1234567'; // Make sure it is a unique no and not a running number that payer can guest.
         $amount = '300'; // Equals to RM300.00
 
-        Senangpay::setPaymentDetails( $payerName, $payerEmail, $payerPhone, $detail, $orderId, $amount );
-        return Senangpay::processPayment();
-
+         $user_info = [
+            'name'=>$payerName,
+            'email'=>$payerEmail,
+            'mobile'=>$payerPhone,
+        ];
+         $url = Senangpay::pay($user_info, $detail, $order_id, $amount);
+       return redirect($url); 
     }
 
     public function processReturnUrl(Request $request){
     
-        if(Senangpay::checkIfReturnHashCorrect( $request ) == true)
+        if(Senangpay::checkIfReturnHashCorrect() == true)
         {
 		        $order = Order::find($request->order_id);
 
