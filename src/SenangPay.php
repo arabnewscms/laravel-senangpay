@@ -1,6 +1,6 @@
 <?php
 
-namespace Jomos\SenangPay;
+namespace Phpanonymous\SenangPay;
 
 class SenangPay {
 
