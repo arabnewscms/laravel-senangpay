@@ -16,6 +16,7 @@
  */
 
 return [
+    "mode" => "sandbox", // sandbox | live
     "secret-key" => "",
     "merchant-id" => ""
 ];
